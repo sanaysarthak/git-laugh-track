@@ -10,7 +10,7 @@ echo "😂 Installing Git Laugh Track Hook Globally..."
 TEMPLATE_DIR="$HOME/.git-templates"
 HOOKS_DIR="$TEMPLATE_DIR/hooks"
 SOUND_DIR="$HOME/.git-laugh-sounds"
-LOCAL_SOUND="sounds/sitcom-laugh.m4a"
+LOCAL_SOUND="sounds/sitcom-laugh.mp3"
 
 # Create necessary directories
 mkdir -p "$HOOKS_DIR"
