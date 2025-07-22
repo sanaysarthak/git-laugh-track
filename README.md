@@ -22,6 +22,9 @@
       <a href="#overview">Overview</a>
     </li>
     <li>
+      <a href="#architecture">Architecture</a>
+    </li>
+    <li>
       <a href="#demo">Demo</a>
     </li>
     <li>
@@ -51,6 +54,30 @@ Key features include:
 - No dependencies beyond standard Unix tools and an audio player.
 - Easily customizable: Add your own MP3 files to personalize the laugh track experience.
 
+
+
+<!--ARCHITECTURE -->
+<a id="architecture"></a>
+## Architecure :-
+```mermaid
+flowchart TD
+    User["User (Developer)"]
+    Git["Git Client"]
+    PostCommitHook["post-commit Hook (hooks/post-commit)"]
+    SoundFiles["Sitcom Laugh Tracks (~/.git-laugh-sounds/*.mp3)"]
+    AudioPlayer["Audio Player (paplay, mpg123, or afplay)"]
+    Installer["global-install.sh"]
+    Uninstaller["uninstall.sh"]
+
+    User --makes commit--> Git
+    Git --triggers--> PostCommitHook
+    PostCommitHook --selects random mp3--> SoundFiles
+    PostCommitHook --calls--> AudioPlayer
+    Installer --sets up hooks & sounds--> PostCommitHook
+    Installer --copies--> SoundFiles
+    Uninstaller --removes--> PostCommitHook
+    Uninstaller --removes--> SoundFiles
+```
 
 
 <!--DEMO -->
