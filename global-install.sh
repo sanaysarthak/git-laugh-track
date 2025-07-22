@@ -16,8 +16,8 @@ cp -n ./sounds/*.mp3 "$SOUND_DIR/" 2>/dev/null
 mkdir -p "$HOOKS_DIR"
 
 # 4. Write the post-commit hook
-cat > "$HOOKS_DIR/post-commit" 
-
+cat > "$HOOKS_DIR/post-commit" << 'EOF'
+#!/bin/bash
 
 SOUND_DIR="$HOME/.git-laugh-sounds"
 [ ! -d "$SOUND_DIR" ] && exit 0
@@ -44,4 +44,4 @@ chmod +x "$HOOKS_DIR/post-commit"
 git config --global init.templateDir "$TEMPLATE_DIR"
 
 echo "✅ Git Laugh Track installed globally."
-
+echo "👉 Now try: git init && git commit -m 'Test commit'"
