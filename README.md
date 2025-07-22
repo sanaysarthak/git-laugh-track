@@ -12,11 +12,6 @@
 </p>
 </div>
 
-<!--
-<p align="center">
-  <img src="" alt="laugh-track-demo"/>
-</p>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -25,6 +20,9 @@
   <ol>
     <li>
       <a href="#overview">Overview</a>
+    </li>
+    <li>
+      <a href="#demo">Demo</a>
     </li>
     <li>
       <a href="#run-locally">Run Locally</a>
@@ -55,6 +53,13 @@ Key features include:
 
 
 
+<!--DEMO -->
+<a id="demo"></a>
+## Demo (Enable Sound 🔊) :-
+https://github.com/user-attachments/assets/27a704b9-01be-40ed-ae80-489633212f4e
+
+
+
 <!--SETUP -->
 <a id="run-locally"></a>
 ## Run Locally :-
@@ -82,7 +87,7 @@ Key features include:
 #### Step 1: Make a Commit
 Use Git as you normally would. After each commit, a random laugh track will play:
 ```sh
-git commit -m "Your commit message"
+git commit -m "commit message"
 ```
 
 #### Step 2: Enjoy the Laugh Track
