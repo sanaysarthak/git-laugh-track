@@ -58,7 +58,7 @@ Key features include:
 
 <!--ARCHITECTURE -->
 <a id="architecture"></a>
-## Architecure :-
+## Architecture :-
 ```mermaid
 flowchart TD
     User["User (Developer)"]
