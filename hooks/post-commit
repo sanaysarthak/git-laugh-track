@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Git Laugh Track - post-commit hook
+
+SOUND_DIR="$HOME/.git-laugh-sounds"
+
+if [ ! -d "$SOUND_DIR" ]; then
+    exit 0
+fi
+
+# Pick a random mp3
+SOUND_FILE=$(find "$SOUND_DIR" -type f -name "*.mp3" | shuf -n 1)
+
+# Play it in background silently
+if command -v paplay >/dev/null 2>&1; then
+    paplay "$SOUND_FILE" >/dev/null 2>&1 &
+elif command -v mpg123 >/dev/null 2>&1; then
+    mpg123 "$SOUND_FILE" >/dev/null 2>&1 &
+elif command -v afplay >/dev/null 2>&1; then
+    afplay "$SOUND_FILE" >/dev/null 2>&1 &
+else
+    echo "No compatible audio player found." >&2
+fi
