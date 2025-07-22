@@ -23,6 +23,4 @@ chmod +x "$HOOKS_DIR/post-commit"
 # 3. Set Git to use this template globally
 git config --global init.templateDir "$TEMPLATE_DIR"
 
-echo "✅ Git Laugh Track installed globally. Now run:"
-echo "   git init"
-echo "in any repo to get the laugh track hook."
+echo "✅ Git Laugh Track installed successfully!"
