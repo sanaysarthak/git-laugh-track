@@ -43,7 +43,7 @@
 
 <!--OVERVIEW --> 
 <a id="overview"></a>
-## Overview :-
+## 📖 Overview :-
 
 Git Laugh Track is a fun and lightweight tool that adds a sitcom laugh track to your Git workflow. Every time you make a commit, a random laugh track sound will play, bringing a bit of humor and joy to your development process.
 
@@ -58,7 +58,7 @@ Key features include:
 
 <!--ARCHITECTURE -->
 <a id="architecture"></a>
-## Architecture :-
+## 🗺️ Architecture :-
 ```mermaid
 flowchart TD
     User["User (Developer)"]
@@ -82,14 +82,14 @@ flowchart TD
 
 <!--DEMO -->
 <a id="demo"></a>
-## Demo (Enable Sound 🔊) :-
+## 🎥 Demo (Enable Sound 🔊) :-
 https://github.com/user-attachments/assets/27a704b9-01be-40ed-ae80-489633212f4e
 
 
 
 <!--SETUP -->
 <a id="run-locally"></a>
-## Run Locally :-
+## 💻 Run Locally :-
 
 #### Installation
 1. Clone or download this repository to your local machine.
@@ -109,7 +109,7 @@ https://github.com/user-attachments/assets/27a704b9-01be-40ed-ae80-489633212f4e
 
 <!-- HOW TO USE -->
 <a id="how-to-use"></a>
-## How to Use :-
+## 🕹️ How to Use :-
 
 #### Step 1: Make a Commit
 Use Git as you normally would. After each commit, a random laugh track will play:
@@ -130,7 +130,7 @@ bash uninstall.sh
 
 <!--TOOLS-USED -->
 <a id="tools-used"></a>
-## Tools Used :-
+## 🧰 Tools Used :-
 
 This project uses the following tools and scripts:
 
